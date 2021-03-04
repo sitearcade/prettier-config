@@ -1,0 +1,28 @@
+{
+  "name": "@sitearcade/prettier-config",
+  "version": "0.0.0",
+  "description": "SiteArcade's prettier config.",
+  "license": "MIT",
+  "homepage": "https://www.sitearcade.com",
+  "repository": "github:sitearcade/prettier-config",
+  "bugs": "https://github.com/sitearcade/prettier-config/issues",
+  "author": {
+    "name": "Mike Stop Continues",
+    "email": "mike@sitearcade.com",
+    "url": "https://www.sitearcade.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish --access public",
+    "preversion": "npm test",
+    "test": "echo 'Seems fine...'"
+  },
+  "peerDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "prettier": "./index.js"
+}
